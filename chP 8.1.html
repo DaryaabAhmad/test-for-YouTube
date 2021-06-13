@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<haed>
+    <title>
+        chapt 8 "forms"
+
+    </title>
+    <form action="https://www.google.com.pk/" method="get">
+        <p>this is whr th form controls will apar hr</p>
+
+    </form>
+    <form action="https://www.google.com.pk/">
+        <p>User name:
+            <input type="text" name="Username" size="25" maxlength="100" />
+        </p>
+        <p>Password :
+            <input type="Password" name="passwrd" size="25" maxlength="100" />
+
+        </p>
+
+        <form action="https://www.google.com.pk/">
+            <p>what did you think of this type gig?</p>
+            <textarea name="comments" cols=" 30" rows="5"> Enter your Comments....</textarea>
+
+        </form>
+    </form>
+
+    <form action="https://www.google.com.pk/">
+        <p>please select your favourie genre:
+            <br />
+            <input type="radio" name="genre" value="rock " checked="checked" /> Rock
+            <input type="radio" name="genre" value="pop" /> Pop
+            <input type="radio" name="genre" value="Jazz" /> jazz
+        </p>
+    </form>
+    <form action="https://www.google.com.pk/">
+
+        <p>
+            please select your favorite music service(s):
+            <br />
+            <input type="checkbox" name="service" value="itune" checked="checked"> iTunes
+            <input type="checkbox" name="service" value="lastfm" /> Last.fm
+            <input type="checkbox" name="service" value="spotify" /> Spotify
+        </p>
+    </form>
+    <form action="https://www.google.com.pk/">
+        <p>What device do you listen to music on?</p>
+        <select name="devices">
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+    </form>
+    <form action="https://www.google.com.pk/">
+        <p>Do you play any of the following instruments?
+            (You can select more than one option by holding
+            down control on a PC or command key on a Mac
+            while selecting different options.)</p>
+        <select name="instruments" size="3" multiple="multiple">
+            <option value="guitar" selected="selected">
+                Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard" selected="selected">Keyboard</option>
+            <option value="bass">Bass</option>
+            </selec>
+    </form>
+
+    <form action="https://www.google.com.pk/" method="post">
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song" /><br />
+        <input type="submit" value="Upload" />
+    </form>
+
+    <form action="https://www.google.com.pk/">
+        <p>Subscribe to our email list:</p>
+        <input type="text" name="email" />
+        <input type="submit" name="subscribe" value="Subscribe" />
+    </form>
+    <form action="http://www.example.org/subscribe.php">
+        <p>Subscribe to our email list:</p>
+        <input type="text" name="email" />
+        <input type="image" src="images/subscribe.jpg" width="100" height="20" />
+    </form>
+    <form action="http://www.example.com/add.php">
+        <button><img src="images/add.gif" alt="add" width="10" height="10" /> Add</button>
+        <input type="hidden" name="bookmark" value="lyrics" />
+    </form>
+    <label>Age: <input type="text" name="age" /></label>
+    <br />
+    Gender:
+    <input id="female" type="radio" name="gender" value="f">
+    <label for="female">Female</label>
+    <input id="male" type="radio" name="gender" value="m">
+    <label for="male">Male</label>
+
+    <fieldset>
+        <legend>Contact details</legend>
+        <label>Email:<br />
+            <input type="text" name="email" /></label><br />
+        <label>Mobile:<br />
+            <input type="text" name="mobile" /></label><br />
+        <label>Telephone:<br />
+            <input type="text" name="telephone" /></label>
+    </fieldset>
+
+    <form action="https://www.google.com.pk/" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required="required" /></title><br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" required="required" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <form action="https://www.google.com.pk/" method="post">
+        <label for="username">Departure date:</label>
+        <input type="date" name="depart" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <form action="https://www.google.com.pk/">
+        <p>Please enter your email address:</p>
+        <input type="email" name="email" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <form action="https://www.google.com.pk/">
+        <p>Please enter your website address:</p>
+        <input type="url" name="website" />
+        <input type="submit" value="Submit" />
+    </form>
+    <form action="https://www.google.com.pk/">
+        <p>Search:</p>
+        <input type="search" name="search" />
+        <input type="submit" value="Search" />
+    </form>
+
+    <form action="https://www.google.com.pk/">
+        <p>Search:</p>
+        <input type="search" name="search" placeholder="Enter keyword" />
+        <input type="submit" value="Search" />
+    </form>
+
+
+</haed>
+
+</html>
+
+<html>
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="http://www.example.com/review.php" method="get">
+        <fieldset>
+            <legend>
+                Your Details:
+            </legend>
+            <label>
+                Name:
+                <input type="text" name="name" size="30" maxlength="100">
+            </label>
+            <br />
+            <label>
+                Email:
+                <input type="email" name="email" size="30" maxlength="100">
+            </label>
+            <br />
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>
+                Your Review:
+            </legend>
+            <p>
+                <label for="hear-about">
+                    How did you hear about us?
+                </label>
+                <select name="referrer" id="hear-about">
+                    <option value="google">Google</option>
+                    <option value="friend">Friend</option>
+                    <option value="advert">Advert</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <p>Would you visit again?
+                <br />
+                <label>
+                    <input type="radio" name="rating" value="yes" />
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="no" />
+                    No
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="maybe" />
+                    Maybe
+                </label>
+            </p>
+            <p>
+                <label for="comments">
+                    Comments:
+                </label>
+                <br />
+                <textarea rows="4" cols="40" id="comments">
+    </textarea>
+            </p>
+            <label>
+                <input type="checkbox" name="subscribe" checked="checked" />
+                Sign me up for email updates
+            </label>
+            <br />
+            <input type="submit" value="Submit review" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
